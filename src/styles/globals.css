@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  font-family: var(--font-family);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: var(--focus-border);
+  transition-duration: 0s !important;
+}
