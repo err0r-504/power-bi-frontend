@@ -5,8 +5,6 @@ import settingsIcon from "../../../assets/icons/settings-icon.svg";
 import profileIcon from "../../../assets/icons/profile-icon.svg";
 import styles from "./Header.module.css";
 
-interface HeaderProps {}
-
 const Header = () => {
   return (
     <header className={styles.header}>
