@@ -1,0 +1,16 @@
+.link {
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 18px;
+  transition-duration: var(--transition-duration);
+}
+
+.link:hover {
+  color: var(--primary-sky-color);
+}
+
+.active {
+  color: var(--primary-sky-color);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}

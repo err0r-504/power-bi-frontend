@@ -1,0 +1,26 @@
+.header {
+  background-color: var(--primary-dark-color);
+}
+
+.container {
+  max-width: 2500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.logo {
+  max-width: 225px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}

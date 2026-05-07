@@ -1,0 +1,18 @@
+.iconButton {
+  background-color: var(--primary-sky-color);
+  border-radius: var(--border-radius-1);
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition-duration: var(--transition-duration);
+  padding: 5px;
+  box-shadow: var(--box-shadow-3);
+}
+
+.iconButton img {
+  border-radius: var(--border-radius-1);
+}
+
+.iconButton:hover {
+  background-color: var(--primary-blue-color);
+}

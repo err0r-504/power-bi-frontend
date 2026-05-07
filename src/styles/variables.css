@@ -33,4 +33,6 @@
   --focus-border: 2px solid var(--primary-aqua-color);
 
   --font-family: "Inter";
+
+  --transition-duration: 0.2s;
 }

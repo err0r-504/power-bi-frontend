@@ -57,6 +57,11 @@ html,
   scroll-behavior: smooth;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 a:where([class]) {
   display: inline-flex;
 }

@@ -1,5 +1,7 @@
+import Header from "../shared/components/Header";
+
 function App() {
-  return <h1>let's get started</h1>;
+  return <Header></Header>;
 }
 
 export default App;
