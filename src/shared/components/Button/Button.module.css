@@ -1,0 +1,27 @@
+.button {
+  background-color: var(--primary-blue-color);
+  border: none;
+  border-radius: var(--border-radius-1);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  box-shadow: var(--box-shadow-1);
+  transition-duration: var(--transition-duration);
+}
+
+.button img {
+  width: 25px;
+  height: 25px;
+}
+
+.button:hover {
+  background-color: var(--accent-blue-color);
+}
+
+.button:active {
+  box-shadow: var(--box-shadow-4);
+}
