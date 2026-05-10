@@ -1,21 +1,22 @@
+import { Link } from "react-router-dom";
 import styles from "./NavIconButton.module.css";
 
 interface NavIconButtonProps {
   children: React.ReactNode;
   label: string;
-  href: string;
+  to: string;
 }
 
-const NavIconButton = ({ children, label, href }: NavIconButtonProps) => {
+const NavIconButton = ({ children, label, to }: NavIconButtonProps) => {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       title={label}
       aria-label={label}
       className={styles.iconButton}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 

@@ -1,16 +1,23 @@
+import { NavLink as RouterNavLink } from "react-router-dom";
 import styles from "./NavLink.module.css";
 
 interface NavLinkProps {
   children: React.ReactNode;
-  href: string;
-  active?: boolean;
+  to: string;
+  end?: boolean;
 }
 
-const NavLink = ({ children, href, active }: NavLinkProps) => {
+const NavLink = ({ children, to, end }: NavLinkProps) => {
   return (
-    <a href={href} className={`${styles.link} ${active ? styles.active : ""}`}>
+    <RouterNavLink
+      to={to}
+      end={end}
+      className={({ isActive }) =>
+        `${styles.link} ${isActive ? styles.active : ""}`
+      }
+    >
       {children}
-    </a>
+    </RouterNavLink>
   );
 };
 
