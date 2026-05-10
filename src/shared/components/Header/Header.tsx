@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavLink from "../NavLink";
 import NavIconButton from "../NavIconButton";
 import notificationIcon from "../../../assets/icons/notification-icon.svg";
@@ -10,25 +11,27 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src="./logo.png" alt="App logo" />
+          <Link to="/">
+            <img src="./logo.png" alt="App logo" />
+          </Link>
         </div>
         <nav className={styles.nav}>
-          <NavLink href="/" active>
+          <NavLink to="/" end>
             Отчеты
           </NavLink>
-          <NavLink href="/">Пользователи</NavLink>
-          <NavLink href="/">Группы доступа</NavLink>
-          <NavLink href="/">Категории</NavLink>
-          <NavLink href="/">Журнал</NavLink>
+          <NavLink to="/users">Пользователи</NavLink>
+          <NavLink to="/groups">Группы доступа</NavLink>
+          <NavLink to="/categories">Категории</NavLink>
+          <NavLink to="/audit">Журнал</NavLink>
         </nav>
         <div className={styles.actions}>
-          <NavIconButton href="/" label="Уведомления">
+          <NavIconButton to="/notifications" label="Уведомления">
             <img src={notificationIcon} alt="" />
           </NavIconButton>
-          <NavIconButton href="/" label="Настройки">
+          <NavIconButton to="/settings" label="Настройки">
             <img src={settingsIcon} alt="" />
           </NavIconButton>
-          <NavIconButton href="/" label="Профиль">
+          <NavIconButton to="/profile" label="Профиль">
             <img src={profileIcon} alt="" />
           </NavIconButton>
         </div>
