@@ -4,9 +4,10 @@
   border-radius: var(--border-radius-1);
   color: var(--primary-white-color);
   font-weight: 700;
+  font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding-block: 5px;
   padding-inline: 10px;
   box-shadow: var(--box-shadow-1);
@@ -23,5 +24,6 @@
 }
 
 .button:active {
-  box-shadow: var(--box-shadow-4);
+  box-shadow: none;
+  transform: translateY(1px);
 }

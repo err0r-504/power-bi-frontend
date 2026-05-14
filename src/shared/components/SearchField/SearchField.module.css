@@ -1,0 +1,21 @@
+.field {
+  background-color: #ffffff;
+  border: none;
+  outline: 1px solid var(--editor-gray-color);
+  border-radius: var(--border-radius-2);
+  padding: 8px 10px 8px 45px;
+  font-size: 14px;
+
+  background-image: url("../../../assets/icons/search-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  box-shadow: var(--box-shadow-1);
+  transition-duration: var(--transition-duration);
+}
+
+.field:focus {
+  outline: 1px solid var(--primary-dark-color);
+  transform: translateY(1px);
+  box-shadow: none;
+}

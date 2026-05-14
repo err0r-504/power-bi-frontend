@@ -1,0 +1,9 @@
+.appLayout {
+  background-color: var(--primary-white-color);
+}
+
+.main {
+  /* outline: 1px solid red; */
+  padding-top: 20px;
+  min-height: 100vh;
+}
